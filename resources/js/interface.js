@@ -155,9 +155,9 @@ function updateSi() { // Gather params
             si.cpuTemperature(function(data) {
                 sysInfo.temp = data.main;
 
-                systemMonitor.system.cpu = sysInfo.cpu.toPrecision(3).toString() + ' %';
+                // systemMonitor.system.cpu = sysInfo.cpu.toPrecision(3).toString() + ' %';
                 systemMonitor.system.mem = sysInfo.mem.toPrecision(2).toString() + ' %';
-                systemMonitor.system.temp = sysInfo.temp.toPrecision(3).toString() + ' °C';
+                // systemMonitor.system.temp = sysInfo.temp.toPrecision(3).toString() + ' °C';
                 systemMonitor.system.ip = ip.address();
 
             });
